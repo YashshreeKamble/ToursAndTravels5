@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Tours & Travels</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo"><i class='bx bxs-plane-alt'></i> Wanderlust</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-login">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+                <div class="menu-icon" id="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="subtitle">Explore the World</span>
+            <h1>Discover Your Next <br> <span class="highlight">Adventure</span></h1>
+            <p>Experience the beauty of the world with our handpicked travel packages. Your dream vacation is just a click away.</p>
+        </div>
+
+        <!-- Glassmorphism Booking Form -->
+        <div class="booking-glass">
+            <form action="#" class="booking-form">
+                <div class="input-group">
+                    <label for="destination">Destination</label>
+                    <div class="input-box">
+                        <i class='bx bx-map'></i>
+                        <input type="text" id="destination" placeholder="Where to?">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="input-group">
+                    <label for="checkin">Check-in</label>
+                    <div class="input-box">
+                        <i class='bx bx-calendar'></i>
+                        <input type="date" id="checkin">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="input-group">
+                    <label for="guests">Guests</label>
+                    <div class="input-box">
+                        <i class='bx bx-user'></i>
+                        <select id="guests">
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4+ People</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-search"><i class='bx bx-search'></i> Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="section-title">
+            <h2>Popular Destinations</h2>
+            <p>Explore our top-rated destinations voted by our community.</p>
+        </div>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1000&auto=format&fit=crop" alt="Paris">
+                    <div class="badge">Popular</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Paris, France</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 4.9</div>
+                    </div>
+                    <p class="description">Experience the city of love, rich history, and exquisite cuisine.</p>
+                    <div class="card-footer">
+                        <span class="price">$1,200 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1000&auto=format&fit=crop" alt="Bali">
+                    <div class="badge">Trending</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Bali, Indonesia</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 4.8</div>
+                    </div>
+                    <p class="description">Relax on stunning beaches and explore beautiful temples.</p>
+                    <div class="card-footer">
+                        <span class="price">$850 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1000&auto=format&fit=crop" alt="Maldives">
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Maldives</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 5.0</div>
+                    </div>
+                    <p class="description">Enjoy luxury overwater bungalows and crystal clear waters.</p>
+                    <div class="card-footer">
+                        <span class="price">$2,100 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Why Choose Us</h2>
+            <p>We provide the best services to make your journey unforgettable.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-dollar-circle'></i>
+                </div>
+                <h3>Best Price Guarantee</h3>
+                <p>We offer the most competitive prices in the market without compromising on quality.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-check-shield'></i>
+                </div>
+                <h3>Safe & Secure</h3>
+                <p>Your safety is our priority. We partner with verified and trusted travel providers.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-support'></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is always available to help you anywhere, anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="section-title">
+            <h2>What Our Clients Say</h2>
+            <p>Read the experiences of our happy travelers from around the world.</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="quote-icon"><i class='bx bxs-quote-left'></i></div>
+                <p class="review-text">"The trip to Paris was absolutely magical. Wanderlust took care of every single detail, from the flights to the boutique hotel. Highly recommended!"</p>
+                <div class="reviewer">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop" alt="Sarah Johnson">
+                    <div class="reviewer-info">
+                        <h4>Sarah Johnson</h4>
+                        <div class="rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="quote-icon"><i class='bx bxs-quote-left'></i></div>
+                <p class="review-text">"Our family vacation to Bali was a dream come true. The itinerary was perfectly balanced between relaxation and adventure. Thank you!"</p>
+                <div class="reviewer">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Michael Chen">
+                    <div class="reviewer-info">
+                        <h4>Michael Chen</h4>
+                        <div class="rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="quote-icon"><i class='bx bxs-quote-left'></i></div>
+                <p class="review-text">"Incredible experience in the Maldives! The overwater bungalow was breathtaking. The best customer service I've ever experienced with a travel agency."</p>
+                <div class="reviewer">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Emma Davis">
+                    <div class="reviewer-info">
+                        <h4>Emma Davis</h4>
+                        <div class="rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Have questions? We'd love to hear from you.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <i class='bx bx-map'></i>
+                    <h4>Location</h4>
+                    <p>123 Travel Avenue, NY 10001</p>
+                </div>
+                <div class="contact-card">
+                    <i class='bx bx-phone'></i>
+                    <h4>Phone</h4>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-card">
+                    <i class='bx bx-envelope'></i>
+                    <h4>Email</h4>
+                    <p>support@wanderlust.com</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form" action="#">
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="How can we help?" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo"><i class='bx bxs-plane-alt'></i> Wanderlust</a>
+                <p>Your ultimate travel partner. We make your dream vacations a reality.</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map'></i> 123 Travel Avenue, NY 10001</li>
+                    <li><i class='bx bx-phone'></i> +1 (555) 123-4567</li>
+                    <li><i class='bx bx-envelope'></i> support@wanderlust.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for latest offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary"><i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wanderlust Tours & Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
