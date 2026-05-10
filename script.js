@@ -38,17 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Close mobile menu when clicking a link
+    // Active link highlighting based on current page
+    const currentLocation = window.location.pathname.split('/').pop() || 'index.html';
     const links = document.querySelectorAll('.nav-links a');
+    
     links.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentLocation) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+        
         link.addEventListener('click', () => {
             if (isMenuOpen) {
                 menuIcon.click();
             }
-            
-            // Active link highlighting
-            links.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
         });
     });
 

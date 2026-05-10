@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Wanderlust</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class='bx bxs-plane-alt'></i> Wanderlust</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-login">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+                <div class="menu-icon" id="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Hero Section -->
+    <section class="inner-hero">
+        <div class="inner-hero-content">
+            <h1>Explore Our Destinations</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Destinations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Filter -->
+    <section class="section-padding" style="padding-bottom: 0;">
+        <div class="nav-container" style="justify-content: center;">
+            <div class="booking-glass" style="margin-top: 0; animation: none; background: white; border-color: #eee;">
+                <form class="booking-form" style="padding: 0.5rem;">
+                    <div class="input-group">
+                        <label style="color: var(--text-main);">Category</label>
+                        <div class="input-box">
+                            <i class='bx bx-category' style="color: var(--secondary-color);"></i>
+                            <select style="color: var(--text-main);">
+                                <option>All Categories</option>
+                                <option>Beach</option>
+                                <option>Mountain</option>
+                                <option>City</option>
+                                <option>Adventure</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider" style="background: #eee;"></div>
+                    <div class="input-group">
+                        <label style="color: var(--text-main);">Price Range</label>
+                        <div class="input-box">
+                            <i class='bx bx-dollar' style="color: var(--secondary-color);"></i>
+                            <select style="color: var(--text-main);">
+                                <option>Any Price</option>
+                                <option>$500 - $1000</option>
+                                <option>$1000 - $2000</option>
+                                <option>$2000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations section-padding">
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="img/paris.jpg" alt="Paris">
+                    <div class="badge">Popular</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Paris, France</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 4.9</div>
+                    </div>
+                    <p class="description">Experience the city of love, rich history, and exquisite cuisine.</p>
+                    <div class="card-footer">
+                        <span class="price">$1,200 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="img/santorini.jpg" alt="Santorini">
+                    <div class="badge">Trending</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Santorini, Greece</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 4.8</div>
+                    </div>
+                    <p class="description">Witness the breathtaking sunsets over the iconic white-washed buildings.</p>
+                    <div class="card-footer">
+                        <span class="price">$1,450 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="img/maldives.jpg" alt="Maldives">
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Maldives</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 5.0</div>
+                    </div>
+                    <p class="description">Enjoy luxury overwater bungalows and crystal clear waters.</p>
+                    <div class="card-footer">
+                        <span class="price">$2,100 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="img/amalfi.jpg" alt="Italy">
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Amalfi Coast, Italy</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 4.7</div>
+                    </div>
+                    <p class="description">Explore colorful cliffside villages and crystal blue waters.</p>
+                    <div class="card-footer">
+                        <span class="price">$1,500 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="img/yosemite.jpg" alt="Yosemite">
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Yosemite, USA</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 4.9</div>
+                    </div>
+                    <p class="description">Witness the majestic granite cliffs and giant sequoia groves.</p>
+                    <div class="card-footer">
+                        <span class="price">$700 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="dest-card">
+                <div class="card-img">
+                    <img src="img/kyoto.jpg" alt="Japan">
+                    <div class="badge">Cultural</div>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Kyoto, Japan</h3>
+                        <div class="rating"><i class='bx bxs-star'></i> 4.8</div>
+                    </div>
+                    <p class="description">Discover traditional temples, sublime gardens, and teahouses.</p>
+                    <div class="card-footer">
+                        <span class="price">$1,800 <span>/person</span></span>
+                        <a href="#" class="btn-outline">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo"><i class='bx bxs-plane-alt'></i> Wanderlust</a>
+                <p>Your ultimate travel partner. We make your dream vacations a reality.</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map'></i> 123 Travel Avenue, NY 10001</li>
+                    <li><i class='bx bx-phone'></i> +1 (555) 123-4567</li>
+                    <li><i class='bx bx-envelope'></i> support@wanderlust.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for latest offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary"><i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wanderlust Tours & Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

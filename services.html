@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust - Tours & Travels</title>
+    <title>Our Services - Wanderlust</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +20,9 @@
             <a href="index.html" class="logo"><i class='bx bxs-plane-alt'></i> Wanderlust</a>
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -38,48 +38,75 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <span class="subtitle">Explore the World</span>
-            <h1>Discover Your Next <br> <span class="highlight">Adventure</span></h1>
-            <p>Experience the beauty of the world with our handpicked travel packages. Your dream vacation is just a click away.</p>
+    <!-- Inner Hero Section -->
+    <section class="inner-hero">
+        <div class="inner-hero-content">
+            <h1>Our Premium Services</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Services</span>
+            </div>
         </div>
+    </section>
 
-        <!-- Glassmorphism Booking Form -->
-        <div class="booking-glass">
-            <form action="#" class="booking-form">
-                <div class="input-group">
-                    <label for="destination">Destination</label>
-                    <div class="input-box">
-                        <i class='bx bx-map'></i>
-                        <input type="text" id="destination" placeholder="Where to?">
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="input-group">
-                    <label for="checkin">Check-in</label>
-                    <div class="input-box">
-                        <i class='bx bx-calendar'></i>
-                        <input type="date" id="checkin">
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="input-group">
-                    <label for="guests">Guests</label>
-                    <div class="input-box">
-                        <i class='bx bx-user'></i>
-                        <select id="guests">
-                            <option value="1">1 Person</option>
-                            <option value="2" selected>2 People</option>
-                            <option value="3">3 People</option>
-                            <option value="4">4+ People</option>
-                        </select>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-search"><i class='bx bx-search'></i> Search</button>
-            </form>
+    <!-- Services Section -->
+    <section class="services section-padding">
+        <div class="section-title">
+            <h2>Everything You Need</h2>
+            <p>We handle the logistics so you can handle the adventure.</p>
         </div>
+        <div class="services-grid">
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-hotel'></i>
+                </div>
+                <h3>Luxury Accommodation</h3>
+                <p>We partner with the world's finest hotels and boutique villas to ensure your stay is as comfortable as it is memorable.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-map-alt'></i>
+                </div>
+                <h3>Custom Itineraries</h3>
+                <p>No two travelers are the same. Our experts craft personalized journeys tailored to your interests and pace.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-bus'></i>
+                </div>
+                <h3>Private Transport</h3>
+                <p>From airport transfers to private chauffeurs, we ensure your travel between destinations is seamless and safe.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-shield-quarter'></i>
+                </div>
+                <h3>Travel Insurance</h3>
+                <p>Travel with peace of mind. We provide comprehensive insurance packages to protect you and your belongings.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-camera'></i>
+                </div>
+                <h3>Guided Tours</h3>
+                <p>Our local guides are storytellers who bring history and culture to life, giving you an insider's perspective.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon-wrapper">
+                    <i class='bx bx-support'></i>
+                </div>
+                <h3>24/7 Concierge</h3>
+                <p>Need a last-minute dinner reservation or a change of plans? Our support team is just a call away, any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="section-padding" style="background: linear-gradient(135deg, var(--secondary-color), #00f2fe); color: white; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready for Your Next Trip?</h2>
+        <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem;">Contact our travel experts today and start planning your dream vacation.</p>
+        <a href="contact.html" class="btn btn-primary" style="background: var(--white); color: var(--secondary-color);">Book a Consultation</a>
     </section>
 
     <!-- Footer -->

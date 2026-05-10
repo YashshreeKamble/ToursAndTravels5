@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class='bx bxs-plane-alt'></i> Wanderlust</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-login">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+                <div class="menu-icon" id="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Hero Section -->
+    <section class="inner-hero">
+        <div class="inner-hero-content">
+            <h1>Get in Touch</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section section-padding">
+        <div class="contact-container">
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <i class='bx bx-map'></i>
+                    <h4>Our Location</h4>
+                    <p>123 Travel Avenue, Suite 100<br>New York, NY 10001</p>
+                </div>
+                <div class="contact-card">
+                    <i class='bx bx-phone'></i>
+                    <h4>Call Us</h4>
+                    <p>Main: +1 (555) 123-4567<br>Support: +1 (555) 987-6543</p>
+                </div>
+                <div class="contact-card">
+                    <i class='bx bx-envelope'></i>
+                    <h4>Email Us</h4>
+                    <p>info@wanderlust.com<br>support@wanderlust.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class='bx bx-time'></i>
+                    <h4>Office Hours</h4>
+                    <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                    <h2>Send Us a Message</h2>
+                    <p>We'll get back to you within 24 hours.</p>
+                </div>
+                <form class="contact-form" action="#">
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select style="width: 100%; padding: 1rem; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; font-size: 1rem; font-family: 'Outfit', sans-serif; outline: none; background: var(--white);">
+                                <option>General Inquiry</option>
+                                <option>Booking Request</option>
+                                <option>Partnership</option>
+                                <option>Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="How can we help you plan your next adventure?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="height: 400px; width: 100%; background: #eee; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://images.pexels.com/photos/1010519/pexels-photo-1010519.jpeg?auto=compress&cs=tinysrgb&w=1500') center/cover no-repeat; opacity: 0.7;"></div>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 1rem 2rem; border-radius: 50px; box-shadow: var(--glass-shadow); display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+            <i class='bx bxs-map-pin' style="color: var(--primary-color); font-size: 1.5rem;"></i>
+            Wanderlust HQ - New York
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo"><i class='bx bxs-plane-alt'></i> Wanderlust</a>
+                <p>Your ultimate travel partner. We make your dream vacations a reality.</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map'></i> 123 Travel Avenue, NY 10001</li>
+                    <li><i class='bx bx-phone'></i> +1 (555) 123-4567</li>
+                    <li><i class='bx bx-envelope'></i> support@wanderlust.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for latest offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary"><i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wanderlust Tours & Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
